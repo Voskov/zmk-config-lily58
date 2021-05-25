@@ -51,17 +51,17 @@
 
 		raise_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |   `   |     |     |      |      |      |                   |      |       |       |      |       |       |
-// |   `   |     |     |      |      |      |                   |      |       |   ^   |      |       |   \   |
-// |       |     |     |      |      |      |                   |      |   <-  |   ^   |  ->  |       |       |
-// |       |     |     |      |      |      |        |  |       |   -  |   =   |  [    |   ]  |   \   |       |
-//                     |      |      | CNFG |        |  |       |      |  HOME |  END  |
+// |    `       |       |       |       |       |       |                   |           |           |           |           |           |       |
+// |    `       |       |       |       |       |       |                   |           |           |    ^      |           |           |   \   |
+// |            |       |       |       |       |       |                   |           |     <-    |    ^      |  ->       |           |       |
+// |            |       |       |       |       |       |       |  |        |     -     |     =     |   [       |   ]       |   \       |       |
+//                              |       |       |       |       |  |        |           |    HOME   |   END     |
 			bindings = <
-&kp GRAVE &trans &trans &trans &trans &trans                        &trans      &trans    &trans    &trans   	&trans    &trans
-&kp GRAVE &trans &trans &trans &trans &trans                        &trans      &trans    &kp UP    &trans   	&trans    &trans
-&trans    &trans &trans &trans &trans &trans                        &trans      &kp LEFT  &kp DOWN  &kp RIGHT	&trans    &trans
-&trans    &trans &trans &trans &trans &kp C_MUTE &trans   &trans    &kp MINUS   &kp EQUAL &kp LBKT 	&kp RBKT    &kp BSLH  &trans
-						&trans &trans &mo 3      &trans   &trans    &trans      &kp HOME  &kp END
+    &kp GRAVE   &trans  &trans  &trans  &trans  &trans                      &trans      &trans      &trans      &trans      &trans      &trans
+    &kp GRAVE   &trans  &trans  &trans  &trans  &trans                      &trans      &trans      &kp UP      &trans      &trans      &trans
+    &trans      &trans  &trans  &trans  &trans  &trans                      &trans      &kp LEFT    &kp DOWN    &kp RIGHT   &trans      &trans
+    &trans      &trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp MINUS   &kp EQUAL   &kp LBKT 	&kp RBKT    &kp BSLH    &trans
+    						    &trans  &trans  &mo 3   &trans      &trans  &trans      &kp HOME    &kp END
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
