@@ -15,11 +15,11 @@
 
 		default_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |  TAB  |  1  |  2  |   3   |  4  |  5  |                   |  6   |  7    |  8    |  9   |   0   | BSPC  |
-// |  ESC  |  Q  |  W  |   E   |  R  |  T  |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
-// |  SHIFT|  A  |  S  |   D   |  F  |  G  |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
-// |  CTRL |  Z  |  X  |   C   |  V  |  B  |   INS  |  |  DEL  |  N   |  M    |  ,    |  .   |   /   |RSH-RET|
-//                     | LOWER | GUI | ALT |  SPACE |  | SPACE | RAISE|  <-   |  ->   |
+// |  TAB   |  1  |  2  |   3   |  4  |  5  |                   |  6   |  7    |  8    |  9   |   0   | BSPC  |
+// |  ESC   |  Q  |  W  |   E   |  R  |  T  |                   |  Y   |  U    |  I    |  O   |   P   |   -   |
+// |  SHIFT |  A  |  S  |   D   |  F  |  G  |                   |  H   |  J    |  K    |  L   |   ;   |   '   |
+// |  CTRL  |  Z  |  X  |   C   |  V  |  B  |   INS  |  |  DEL  |  N   |  M    |  ,    |  .   |   /   |RSH-RET|
+//                      | LOWER | GUI | ALT |  SPACE |  | SPACE | RAISE|  <-   |  ->   |
 			bindings = <
 &kp TAB   &kp N1 &kp N2 &kp N3 &kp N4   &kp N5                     	        &kp N6 	&kp N7   	&kp N8    &kp N9  &kp N0   &kp BSPC
 &kp ESC   &kp Q  &kp W  &kp E  &kp R    &kp T                      	        &kp Y  	&kp U    	&kp I     &kp O   &kp P    &kp MINUS
@@ -35,15 +35,15 @@
 // -------------------------------------------------------------------------------------------------------------
 // |   ~   |     |     |      |      |      |                   |      |       |       |       |       |       |
 // |   ~   |  F1 |  F2 |  F3  |  F4  |      |                   |      |   7   |   8   |   9   |       |  "|"  |
-// |       |  F5 |  F6 |  F7  |  F8  |      |                   |      |   4   |   5   |   6   |       |   ~   |
+// |  DEL  |  F5 |  F6 |  F7  |  F8  |      |                   |      |   4   |   5   |   6   |       |   ~   |
 // |       |  F9 | F10 | F11  | F12  | MUTE |        |  |       |   0  |   1   |   2   |   3   |       |  "|"  |
 //                     |      | VOL▼ | VOL▲ |        |  |       | CNFG | PG_UP | PG_DN |
 			bindings = <
-&kp TILDE  &trans  &trans   &trans  &trans          &trans                          &trans    &trans     &trans    &trans    &trans    &trans
-&kp TILDE  &kp F1  &kp F2   &kp F3  &kp F4          &trans                          &trans    &kp N7     &kp N8    &kp N9    &trans    &kp PIPE
-&trans     &kp F5  &kp F6   &kp F7  &kp F8          &trans                          &trans    &kp N4     &kp N5    &kp N6    &trans    &kp TILDE
-&trans     &kp F9  &kp F10  &kp F11 &kp F12         &kp C_MUTE      &trans  &trans  &kp N0    &kp N1     &kp N2    &kp N3    &trans    &kp PIPE
-	                        &trans  &kp C_VOL_DN    &kp C_VOL_UP    &trans  &trans  &mo 3     &kp PG_UP  &kp PG_DN
+&kp TILDE   &trans  &trans   &trans  &trans          &trans                          &trans    &trans     &trans    &trans    &trans    &trans
+&kp TILDE   &kp F1  &kp F2   &kp F3  &kp F4          &trans                          &trans    &kp N7     &kp N8    &kp N9    &trans    &kp PIPE
+&kp DEL     &kp F5  &kp F6   &kp F7  &kp F8          &trans                          &trans    &kp N4     &kp N5    &kp N6    &trans    &kp TILDE
+&trans      &kp F9  &kp F10  &kp F11 &kp F12         &kp C_MUTE      &trans  &trans  &kp N0    &kp N1     &kp N2    &kp N3    &trans    &kp PIPE
+	                         &trans  &kp C_VOL_DN    &kp C_VOL_UP    &trans  &trans  &mo 3     &kp PG_UP  &kp PG_DN
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
