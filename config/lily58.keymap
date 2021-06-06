@@ -33,15 +33,15 @@
 
 		lower_layer {
 // -------------------------------------------------------------------------------------------------------------
-// |   ~   |     |     |      |      |      |                   |      |       |       |       |       |       |
-// |   ~   |  F1 |  F2 |  F3  |  F4  | MUTE |                   |      |   7   |   8   |   9   |       |  "|"  |
-// |  DEL  |  F5 |  F6 |  F7  |  F8  | VOL▲ |                   |      |   4   |   5   |   6   |       |   ~   |
-// |       |  F9 | F10 | F11  | F12  | VOL▼ |        |  |       |   0  |   1   |   2   |   3   |       |  "|"  |
-//                     |      |      |      |        |  |       | CNFG | PG_UP | PG_DN |
+// |   ~   |      |     |      |      | BSPC |                   |      |       |       |       |       |       |
+// |  DEL  |  F1  |  F2 |  F3  |  F4  | MUTE |                   |      |   7   |   8   |   9   |       |  "|"  |
+// |       |  F5  |  F6 |  F7  |  F8  | VOL▲ |                   |      |   4   |   5   |   6   |       |   ~   |
+// |       |  F9  | F10 | F11  | F12  | VOL▼ |        |  |       |   0  |   1   |   2   |   3   |       |  "|"  |
+//                      |      |      |      |        |  |       | CNFG | PG_UP | PG_DN |
 			bindings = <
-&kp TILDE   &trans  &trans   &trans     &trans  &trans                          &trans    &trans     &trans    &trans    &trans    &trans
-&kp TILDE   &kp F1  &kp F2   &kp F3     &kp F4  &kp C_MUTE                      &trans    &kp N7     &kp N8    &kp N9    &trans    &kp PIPE
-&kp DEL     &kp F5  &kp F6   &kp F7     &kp F8  &kp C_VOL_UP                    &trans    &kp N4     &kp N5    &kp N6    &trans    &kp TILDE
+&kp TILDE   &trans  &trans   &trans     &trans  &kp BSPC                        &trans    &trans     &trans    &trans    &trans    &trans
+&kp DEL     &kp F1  &kp F2   &kp F3     &kp F4  &kp C_MUTE                      &trans    &kp N7     &kp N8    &kp N9    &trans    &kp PIPE
+&trans      &kp F5  &kp F6   &kp F7     &kp F8  &kp C_VOL_UP                    &trans    &kp N4     &kp N5    &kp N6    &trans    &kp TILDE
 &trans      &kp F9  &kp F10  &kp F11    &kp F12 &kp C_VOL_DN    &trans  &trans  &kp N0    &kp N1     &kp N2    &kp N3    &trans    &kp PIPE
 	                         &trans     &trans  &trans          &trans  &trans  &mo 3     &kp PG_UP  &kp PG_DN
 			>;
